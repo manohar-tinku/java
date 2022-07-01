@@ -1,5 +1,6 @@
 package basics;
 
+import basics.impl.Dice;
 import basics.impl.ListFiles;
 import basics.impl.ReverseString;
 import basics.impl.Trigonometry;
@@ -14,5 +15,8 @@ public class Main {
 
         Trigonometry trigonometry=new Trigonometry();
         trigonometry.findRatios();
+
+        Dice dice=new Dice();
+        dice.play();
     }
 }
