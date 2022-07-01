@@ -2,6 +2,7 @@ package basics;
 
 import basics.impl.ListFiles;
 import basics.impl.ReverseString;
+import basics.impl.Trigonometry;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,5 +11,8 @@ public class Main {
 
         ListFiles listFiles=new ListFiles();
         listFiles.javaFiles();
+
+        Trigonometry trigonometry=new Trigonometry();
+        trigonometry.findRatios();
     }
 }
