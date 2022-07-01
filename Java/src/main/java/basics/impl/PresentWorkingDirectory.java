@@ -1,5 +1,6 @@
 package basics.impl;
 
+import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
@@ -10,7 +11,10 @@ public class PresentWorkingDirectory {
     public void pwd(){
         System.out.println(System.getProperty("user.dir"));
 
-        Path path= Paths.get("");
-        System.out.println(path.toAbsolutePath().toString());
+        System.out.println(Paths.get("").toAbsolutePath());
+
+        System.out.println(FileSystems.getDefault().getPath("").toAbsolutePath());
+
+        System.out.println(Path.of("").toAbsolutePath());
     }
 }
