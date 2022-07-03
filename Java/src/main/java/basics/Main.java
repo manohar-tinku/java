@@ -4,6 +4,10 @@ import basics.impl.*;
 import basics.utils.Form;
 import basics.utils.Genre;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         ReverseString reverseString = new ReverseString();
@@ -38,5 +42,17 @@ public class Main {
         book1.setIllustrationUrl("www.manohar.com");
 
         System.out.println(book1.toString());
+
+        List<SimpleDate> list=new ArrayList<>();
+        list.add(new SimpleDate(2000,12,1));
+        list.add(new SimpleDate(2002,6,1));
+        list.add(new SimpleDate(1999,7,1));
+        list.add(new SimpleDate(2004,1,3));
+        list.add(new SimpleDate(2004,2,1));
+        list.add(new SimpleDate(2004,1,1));
+
+        Collections.sort(list);
+
+        list.forEach(s-> System.out.println(s));
     }
 }
